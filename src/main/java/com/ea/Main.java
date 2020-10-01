@@ -1,5 +1,4 @@
 package com.ea;
-
 import com.google.common.collect.ImmutableList;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -14,10 +13,8 @@ import org.openqa.selenium.devtools.network.model.ConnectionType;
 import org.openqa.selenium.devtools.network.model.ResourceType;
 import org.openqa.selenium.devtools.target.Target;
 import org.openqa.selenium.devtools.target.model.TargetInfo;
-
 import java.util.Optional;
 import java.util.Set;
-
 import static org.junit.Assert.assertEquals;
 import static org.openqa.selenium.devtools.inspector.Inspector.detached;
 import static org.openqa.selenium.devtools.network.Network.emulateNetworkConditions;
