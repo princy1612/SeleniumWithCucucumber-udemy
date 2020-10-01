@@ -63,8 +63,12 @@
             <artifactId>cucumber-java</artifactId>
             <version>5.7.0</version>
         </dependency>
-
-
+	    <dependency>
+  <groupId>com.ea.orbit.samples</groupId>
+  <artifactId>orbit-samples-annotation</artifactId>
+  <version>0.3.1</version>
+  <type>pom</type>
+</dependency>
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
         <dependency>
             <groupId>io.cucumber</groupId>
