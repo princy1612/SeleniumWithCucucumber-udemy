@@ -17,6 +17,10 @@ import org.openqa.selenium.devtools.target.model.TargetInfo;
 
 import java.util.Optional;
 import java.util.Set;
+import java.net.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.*;
+import org.openqa.selenium.remote.*;
 
 import static org.junit.Assert.assertEquals;
 import static org.openqa.selenium.devtools.inspector.Inspector.detached;
