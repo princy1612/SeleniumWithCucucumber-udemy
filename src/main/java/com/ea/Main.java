@@ -31,7 +31,7 @@ public class Main {
         
         
         function chromeDriver(){
-        function ChromeDriver(){};
+        function ChromeDriver(){}
 
         //Selenium 4
         System.setProperty("webdriver.chrome.driver", "/Users/karthikkk/ChromeDriver/chromedriver");
