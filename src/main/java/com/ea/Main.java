@@ -28,6 +28,10 @@ import static org.openqa.selenium.support.locators.RelativeLocator.withTagName;
 public class Main {
 
     public static void main(String[] args) {
+        
+        
+        function chromeDriver(){
+        function ChromeDriver(){};
 
         //Selenium 4
         System.setProperty("webdriver.chrome.driver", "/Users/karthikkk/ChromeDriver/chromedriver");
