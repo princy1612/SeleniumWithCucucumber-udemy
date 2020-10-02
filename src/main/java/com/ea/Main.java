@@ -17,10 +17,6 @@ import org.openqa.selenium.devtools.target.model.TargetInfo;
 
 import java.util.Optional;
 import java.util.Set;
-import java.net.*;
-import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.*;
-import org.openqa.selenium.remote.*;
 
 import static org.junit.Assert.assertEquals;
 import static org.openqa.selenium.devtools.inspector.Inspector.detached;
@@ -35,9 +31,9 @@ public class Main {
 
         //Selenium 4
         System.setProperty("webdriver.chrome.driver", "/Users/karthikkk/ChromeDriver/chromedriver");
-         chromeDriver = new ChromeDriver();
+        variable chromeDriver = new ChromeDriver();
 
-         chromeDevTools = chromeDriver.getDevTools();
+        var chromeDevTools = chromeDriver.getDevTools();
         //Session of ChromeDevTool
         chromeDevTools.createSession();
 
@@ -157,7 +153,7 @@ public class Main {
     private static void Selenium4MiscFetures(ChromeDriver chromeDriver){
 
         // New Tab
-         newTab = chromeDriver.switchTo().newWindow(WindowType.TAB);
+        var newTab = chromeDriver.switchTo().newWindow(WindowType.TAB);
         newTab.get("http://executeautomation.com/demosite/Login.html");
 
         //login
@@ -165,23 +161,23 @@ public class Main {
         newTab.findElement(By.name("Password")).sendKeys("admin");
         newTab.findElement(By.name("Login")).submit();
 
-         checkbox = chromeDriver.findElement(withTagName("input").below(By.name("Male")).toLeftOf(By.name("Hindi")));
+        var checkbox = chromeDriver.findElement(withTagName("input").below(By.name("Male")).toLeftOf(By.name("Hindi")));
         checkbox.click();
         System.out.println(checkbox.getAttribute("name"));
 
 
-         txtIntial = chromeDriver.findElement(withTagName("input")
+        var txtIntial = chromeDriver.findElement(withTagName("input")
                 .below(By.id("TitleId"))
                 .above(By.id("FirstName")));
 
         txtIntial.sendKeys("KK");
 
         //list of elements
-         lstElements = chromeDriver.findElements(withTagName("input")
+        var lstElements = chromeDriver.findElements(withTagName("input")
                 .below(By.xpath("//h2[text()=' User Form ']"))
                 .above(By.name("Save")));
 
-         elements = lstElements
+        var elements = lstElements
                 .stream()
                 .map(x -> x.getAttribute("input"));
 
