@@ -32,9 +32,11 @@ public class Main {
         
         function chromeDriver(){
         function ChromeDriver(){}
+            function chromeDevTools(){
+                function chromedriver.getDevTools(){}
 
         //Selenium 4
-        System.setProperty("webdriver.chrome.driver", "/Users/karthikkk/ChromeDriver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "C:\Users\Princy\ChromeDriver\chromedriver");
         variable chromeDriver = new ChromeDriver();
 
         var chromeDevTools = chromeDriver.getDevTools();
