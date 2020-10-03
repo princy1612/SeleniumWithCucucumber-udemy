@@ -184,5 +184,4 @@ public class Main {
         //should be 7
         System.out.println(elements.count());
     }
-}  }
-}
+}  
