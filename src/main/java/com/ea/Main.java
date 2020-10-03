@@ -28,10 +28,10 @@ import static org.openqa.selenium.support.locators.RelativeLocator.withTagName;
 public class Main {
 
     public static void main(String[] args) {
-        EventQueue.invokeLater(() -> {
+
         //Selenium 4
-        System.setProperty("webdriver.chrome.driver", "/Users/Princy/ChromeDriver/chromedriver");
-        variable chromeDriver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver", "/Users/karthikkk/ChromeDriver/chromedriver");
+        var chromeDriver = new ChromeDriver();
 
         var chromeDevTools = chromeDriver.getDevTools();
         //Session of ChromeDevTool
@@ -53,9 +53,13 @@ public class Main {
         String message = "From ExecuteAutomation";
         consoleLogs(chromeDevTools, message);
         chromeDriver.executeScript("console.log('" + message + "');");
-         chromeDriver.get("https://amazon.in");
-        });
+
+
+        chromeDriver.get("https://amazon.in");
+
     }
+
+
     /**
      * Enable Network Offline
      * @param devTools
@@ -180,4 +184,5 @@ public class Main {
         //should be 7
         System.out.println(elements.count());
     }
+}  }
 }
