@@ -53,13 +53,9 @@ public class Main {
         String message = "From ExecuteAutomation";
         consoleLogs(chromeDevTools, message);
         chromeDriver.executeScript("console.log('" + message + "');");
-
-
-        chromeDriver.get("https://amazon.in");
-
+         chromeDriver.get("https://amazon.in");
+        })
     }
-
-
     /**
      * Enable Network Offline
      * @param devTools
