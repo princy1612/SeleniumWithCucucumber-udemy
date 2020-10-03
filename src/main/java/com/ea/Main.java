@@ -30,7 +30,7 @@ public class Main {
     public static void main(String[] args) {
         
         //Selenium 4
-        System.setProperty("webdriver.chrome.driver", "C:\Users\Princy\ChromeDriver\chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/Princy/ChromeDriver/chromedriver");
         variable chromeDriver = new ChromeDriver();
 
         var chromeDevTools = chromeDriver.getDevTools();
