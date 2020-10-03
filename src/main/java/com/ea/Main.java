@@ -30,10 +30,10 @@ public class Main {
     public static void main(String[] args) {
         
         
-        function chromeDriver(){
-        function ChromeDriver(){}
-            function chromeDevTools(){
-                function chromedriver.getDevTools(){}
+        function chromeDriver(){;
+        function ChromeDriver(){};
+            function chromeDevTools(){;
+                function chromedriver.getDevTools(){};
 
         //Selenium 4
         System.setProperty("webdriver.chrome.driver", "C:\Users\Princy\ChromeDriver\chromedriver");
