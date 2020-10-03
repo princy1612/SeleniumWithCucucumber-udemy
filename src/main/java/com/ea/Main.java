@@ -54,7 +54,7 @@ public class Main {
         consoleLogs(chromeDevTools, message);
         chromeDriver.executeScript("console.log('" + message + "');");
          chromeDriver.get("https://amazon.in");
-        })
+        });
     }
     /**
      * Enable Network Offline
